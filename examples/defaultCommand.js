@@ -28,6 +28,7 @@ program
     console.log(`server on port ${options.port}`);
   });
 
+debugger
 program.parse(process.argv);
 
 // Try the following:

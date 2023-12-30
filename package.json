@@ -26,7 +26,10 @@
     "test-esm": "node ./tests/esm-imports-test.mjs",
     "typecheck-ts": "tsd && tsc -p tsconfig.ts.json",
     "typecheck-js": "tsc -p tsconfig.js.json",
-    "test-all": "npm run test && npm run lint && npm run typecheck-js && npm run test-esm"
+    "test-all": "npm run test && npm run lint && npm run typecheck-js && npm run test-esm",
+    "missing-args": "node examples/options-common.js -p",
+    "option-common": "node examples/options-common.js -p vegetarian",
+    "default-command": "node examples/defaultCommand.js serve -p 8080"
   },
   "files": [
     "index.js",

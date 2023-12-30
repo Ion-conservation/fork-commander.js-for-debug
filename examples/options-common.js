@@ -7,9 +7,8 @@
 const commander = require('../'); // include commander in git clone of commander repo
 const program = new commander.Command();
 
+debugger
 program
-  .option('-d, --debug', 'output extra debugging')
-  .option('-s, --small', 'small pizza size')
   .option('-p, --pizza-type <type>', 'flavour of pizza');
 
 program.parse(process.argv);
